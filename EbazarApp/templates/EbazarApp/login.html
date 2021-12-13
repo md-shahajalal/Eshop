@@ -1,0 +1,30 @@
+{% extends 'EbazarApp/base.html' %}
+{%block style%}
+<style>
+    .form-container{
+        margin-top: 30px;
+    }
+</style>
+{% endblock %}
+
+{%block body %}
+<div class="container m-10 form-container">
+    <h1 >SignIn Form</h1>
+<form action="handle-login/" method="POST">{% csrf_token%}
+
+    <div class="mb-3">
+      <label for="loginusername" class="form-label">Username</label>
+      <input type="text" class="form-control" id="loginusername" placeholder="Username" name="loginusername" required>
+    </div>
+     
+
+
+    <div class="mb-3">
+      <label for="loginpass" class="form-label">Enter Password</label>
+      <input type="password" class="form-control" id="loginpass" placeholder="Enter your Password" name="loginpass" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="logIn-btnId">Login</button>
+  </form>
+  </div>
+{% endblock %}

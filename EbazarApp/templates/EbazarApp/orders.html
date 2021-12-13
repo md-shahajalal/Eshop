@@ -1,0 +1,35 @@
+{% extends 'EbazarApp/base.html' %}
+{% block style %}
+<style>
+    .center{
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="center">Your Orders</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th scope="col">Order Number</th>
+              <th scope="col">Order Id</th>
+              <th scope="col">Order Date</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for order in orders%}
+            <tr>
+              <th scope="row">{{forloop.counter}}</th>
+              <td>{{order.order_id_str}}</td>
+              <td>{{order.order_date}}</td>
+              <td>{% if order.delivered %}<span style="color:green;">*delivered</span>{%else%}---{%endif%}</td>
+            </tr>
+            {% endfor %}
+           
+          </tbody>
+      </table>
+</div>
+{% endblock %}

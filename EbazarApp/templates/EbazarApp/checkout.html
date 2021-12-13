@@ -1,0 +1,113 @@
+{% extends 'EbazarApp/base.html' %}
+{% block title%} Checkout {% endblock %}
+{% block body %}
+<div class="container">
+    <div class="col my-4">
+        <h2>Step 1 - Review Your Cart Items</h2>
+        <div id="items">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">Products Name</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody id="item-row">
+                    {% for order in orders%}
+                    <tr>
+                      <th scope="row">{{forloop.counter}}</th>
+                      <td>{{order.order_id_str}}</td>
+                      <td>{{order.order_date}}</td>
+                    
+                    </tr>
+                    {% endfor %}
+                   
+                  </tbody>
+              </table>
+            <ul class="list-group" id="item-list">
+               
+            </ul>
+        </div>
+    </div>
+    <div class="col" id="total-div">
+        <p>Total: </p>
+    </div>
+    <div class="col my-4">
+        <h2>Step 2 - Enter Address & Other Details:</h2>
+        <form method="post" action="/ebazar/checkout/">{% csrf_token %}
+            <input type="hidden" name="itemsJson" id="itemsJson">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputname">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="address1" name="address1" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address line 2</label>
+                <input type="text" class="form-control" id="address2" name="address2"
+                    placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="city" name="city">
+                </div>
+
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="zip_code" name="zip_code">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputZip">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+    </div>
+    {% if thank%}
+    <p>thank value </p>
+    <form>
+        <input type="hidden" id="thankInput" name="thankInput" value="{{thank}}" />
+    </form>
+    {%endif %}
+</div>
+{% endblock %}
+{% block js%}
+<script>
+    if (localStorage.getItem('cart') == null) {
+        var cart = {}
+        listItemStr = "<p>Your cart is empty, please add some items to your cart before checking out!</p>";
+    }
+    else {
+        cart = JSON.parse(localStorage.getItem('cart'));
+        listItemStr = "";
+        var total = 0;
+        for (item in cart) {
+            total += cart[item].qty * cart[item].price;
+            listItemStr+=" <tr><th scope='row'>"+cart[item].name+"</th><td>"+cart[item].qty +"</td><td>"+cart[item].qty * cart[item].price+"</td>"
+              +" </tr>"
+           
+        }
+        document.getElementById('item-row').innerHTML = listItemStr;
+        document.getElementById('total-div').innerHTML = "<p>Total: <b>" + total + "tk.</b></p>";
+        $('#itemsJson').val(JSON.stringify(cart));
+       thank_value=document.getElementById('thankInput').value;
+       console.log('thank value',thank_value)
+       if(thank_value){
+       localStorage.clear();
+       document.location = "/ebazar";
+       //alert('Thanks for ordering with us. Your order is is {{id}}. Use it to track your order using our order tracker');
+       }
+    }
+</script>
+{% endblock %}

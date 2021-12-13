@@ -1,0 +1,45 @@
+{% extends 'EbazarApp/base.html' %}
+{%block style%}
+<style>
+    .form-container{
+        margin-top: 30px;
+    }
+</style>
+{% endblock %}
+{% block title%}SignUp{%endblock%}
+{% block body %}
+<div class="container m-10 form-container">
+    <h1 >Signup Form</h1>
+    <form action="handle-signup/" method="POST">{% csrf_token %}
+        <div class="form-group">
+          <label for="signUpUserNameId" class="form-label">Username</label>
+          <input type="text" class="form-control" id="signUpUserNameId" placeholder="Username(lowercase & alphanumeric)" name="user-name" required>
+        </div>
+        <div class="form-group">
+          <label for="signUpFirstNameId" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="signUpFirstNameId" placeholder="First Name" name="fname" required>
+        </div> 
+        <div class="form-group">
+          <label for="signUpLastNameId" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="signUpLasrNameId" placeholder="Last Name" name="lname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="signUpEmailId" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="signUpEmailId" name="email" aria-describedby="emailHelp" placeholder="name@email.com" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="signUpPassword1" class="form-label">Choose a Password</label>
+          <input type="password" class="form-control" id="signUpPassword1" placeholder="Choose Your Password" name="pass1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="signUpPassword2" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="signUpPassword2" placeholder="Enter Your Password Again" name="pass2" required>
+        </div>
+        <button type="submit" class="btn btn-primary" id="signUp-btnId">SignUp</button>
+        </form>
+</div>
+{% endblock %}
