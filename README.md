@@ -1,8 +1,12 @@
 # Eshop
+
 <div>
 <span>This is an Ecommerce Project named Eshop. Ecommerce is a huge part of economy and vital to bussiness that sell products or </span><br>
 <span>services online.Ecommerce give bussiness the ability to reach  more customers than traditional retail.With so many people making </span><br>
 <span>their purchases online,it is the fastest-growing  market.</span><br>
+<span>This website is created for learning purpose.It 
+is created by using django,javascript,jquery,html,
+css.</span>
 <span>Admin Features:</span><br>
    <span>i)Adding Products Category(category_name,category_image),remove,update</span><br>
    <span>ii)Adding products with a specific category,remove,update</span><br>
