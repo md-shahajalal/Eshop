@@ -42,7 +42,8 @@
 ![Screenshot (174)](https://user-images.githubusercontent.com/49786183/145956896-fd0666c2-b31a-4d2d-bcc4-cf2ef61002c5.png)
 ![Screenshot (171)](https://user-images.githubusercontent.com/49786183/145956905-7b24a52c-0535-456a-97e5-14a1348fcefd.png)
 
-
+   <h1>For details</h1>
+  https://drive.google.com/drive/folders/1OIiTMyl1F7kN4KqXU6bJ97WyyHEfN4FO
   </div>
 <div>
   <h2>To configure this project to your machine...</h2>
