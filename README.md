@@ -30,18 +30,22 @@
  They can also track their orders by providing the order id and the email they used for ordering the product.They can also make a contact 
  with The owner of the shop.</p>
    <h1>Screenshots</h1>
- ![Screenshot (161)](https://user-images.githubusercontent.com/49786183/145956471-4f812ecd-dadd-4dcb-8ef6-ad73df2161b2.png)
-![Screenshot (162)](https://user-images.githubusercontent.com/49786183/145956584-68e06d41-96da-4868-ae98-6fdb4d92bb2c.png)
-![Screenshot (163)](https://user-images.githubusercontent.com/49786183/145956610-067df134-2805-43c5-8f94-665033aafff6.png)
-![Screenshot (164)](https://user-images.githubusercontent.com/49786183/145956640-6310b879-1ccf-418a-af9a-abbaf7609b90.png)
-![Screenshot (165)](https://user-images.githubusercontent.com/49786183/145956655-fd0d5856-6131-4e21-9c21-6a84e892d6ae.png)
-![Screenshot (166)](https://user-images.githubusercontent.com/49786183/145956688-fc61690d-614e-438f-ae6f-aab02842c7df.png)
-![InkedScreenshot (169)_LI](https://user-images.githubusercontent.com/49786183/145956767-4a45da6c-0870-424a-9b67-11f6cf9f8fe6.jpg)
-![Screenshot (170)](https://user-images.githubusercontent.com/49786183/145956841-da0a33e8-f3bc-4509-9844-df634793fed7.png)
-![Screenshot (172)](https://user-images.githubusercontent.com/49786183/145956876-75ddce93-02fa-450e-bc51-f24c869d71eb.png)
-![Screenshot (174)](https://user-images.githubusercontent.com/49786183/145956896-fd0666c2-b31a-4d2d-bcc4-cf2ef61002c5.png)
-![Screenshot (171)](https://user-images.githubusercontent.com/49786183/145956905-7b24a52c-0535-456a-97e5-14a1348fcefd.png)
 
+
+   <img src="https://user-images.githubusercontent.com/49786183/145956471-4f812ecd-dadd-4dcb-8ef6-ad73df2161b2.png" />
+    <img src="https://user-images.githubusercontent.com/49786183/145956584-68e06d41-96da-4868-ae98-6fdb4d92bb2c.png" />
+    <img src="https://user-images.githubusercontent.com/49786183/145956610-067df134-2805-43c5-8f94-665033aafff6.png" />
+    <img src="https://user-images.githubusercontent.com/49786183/145956640-6310b879-1ccf-418a-af9a-abbaf7609b90.png" />
+    <img src="https://user-images.githubusercontent.com/49786183/145956655-fd0d5856-6131-4e21-9c21-6a84e892d6ae.png" />
+   
+   <img src="https://user-images.githubusercontent.com/49786183/145956688-fc61690d-614e-438f-ae6f-aab02842c7df.png" />
+   <img src="https://user-images.githubusercontent.com/49786183/145956767-4a45da6c-0870-424a-9b67-11f6cf9f8fe6.jpg" />
+   <img src="https://user-images.githubusercontent.com/49786183/145956841-da0a33e8-f3bc-4509-9844-df634793fed7.png" />
+   <img src="https://user-images.githubusercontent.com/49786183/145956876-75ddce93-02fa-450e-bc51-f24c869d71eb.png" />
+   <img src="https://user-images.githubusercontent.com/49786183/145956896-fd0666c2-b31a-4d2d-bcc4-cf2ef61002c5.png" />
+   <img src="https://user-images.githubusercontent.com/49786183/145956905-7b24a52c-0535-456a-97e5-14a1348fcefd.png" />
+   
+   
    <h1>For details</h1>
   https://drive.google.com/drive/folders/1OIiTMyl1F7kN4KqXU6bJ97WyyHEfN4FO
   </div>
